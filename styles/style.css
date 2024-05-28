@@ -7,6 +7,10 @@ body {
   color: #ffffff;
 }
 
+h2{
+  color: #ff5722;
+}
+
 nav {
   background-color: #161b22;
   padding: 10px 0;
@@ -17,7 +21,7 @@ ul {
   text-align: center;
 }
 
-li {
+nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
@@ -76,9 +80,9 @@ section {
 
 .area {
   display: flex;
-  flex-direction: row;
+  gap: 2%;
   flex-wrap: wrap;
-  gap: 1%;
+  justify-content: center;
 }
 
 .card {
@@ -87,7 +91,6 @@ section {
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
   border-radius: 8px;
-  margin-left: 2%;
   color: #161b22;
   margin-bottom: 1.4rem;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -129,27 +132,29 @@ section {
 .tecnologias {
   background: #bdc3c7;
   color: #161b22;
-  padding: 20px;
-}
-
-.tecnologias h2 {
-  color: #ff5722;
+  padding: 2% 10% 2% 10%;
 }
 
 .tecnologias .tecnologias-list{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 7px;
+}
+
+.tecnologias .tecnologias-list li {
+  display: inline-block;
+  list-style-type: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tecnologias .tecnologias-list li:hover{
+  transform: translateY(-10px);
 }
 
 #contato {
-  background: #161b22;
-  padding: 20px;
   border-radius: 8px;
-}
-
-#contato h2 {
-  color: #ff5722;
+  padding: 2% 10% 2% 10%;
 }
 
 #contato p {

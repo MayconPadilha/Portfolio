@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Maycon Padilha</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Maycon Padilha - Portifólio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,6 @@
 
     <!-- Header -->
     <header id="header">
-        <!-- <div class="overlay"></div> -->
         <div class="header-content">
             <h1>Maycon Padilha</h1>
             <p>Eu sou um Desenvolvedor Full Stack</p>
@@ -29,59 +29,10 @@
         <div class="profile"></div>
     </header>
 
-    <!-- <section>
-        <img align="right" src="https://media.tenor.com/3OnwqAIT5lcAAAAi/subaru-duck-dance-smooth.gif" width="200" height="200" border="0" />
-
-        <p align="left">Atualmente sou estudante de Análise e Desenvolvimento de Sistemas no IFRS<br>(Instituto Federal do Rio Grande do Sul, Campus Restinga)</p>   
-        <p align="left">Me Considero um desenvolvedor full stack por ter experiência tanto em front-end quanto em back-end!</p>
-        <p align="left">Tenho sólida experiência em resolver problemas de forma eficiente. Sou reconhecido pela minha atenção aos detalhes e pela capacidade de lidar com desafios de maneira calma e eficaz. Estou sempre disposto a aprender e crescer, buscando constantemente maneiras de aprimorar minhas habilidades e contribuir para o sucesso da equipe e organização.</p>
-        <p align="left">Estou aberto a propostas e novos desafios!</p>
-    </section> -->
-
     <!-- Projetos -->
     <section id="projetos">
         <h2>Projetos</h2>
-        <div class="area">
-            <div class="card">
-                <div class="img-container">
-                    <img src="assets/emAndamento.png" alt="Imagem Em Andamento">
-                </div>
-                <h3>Nome do Projeto 1</h3>
-                <a href="#">Ver Projeto</a>
-            </div>
-
-            <div class="card">
-                <div class="img-container">
-                    <img src="assets/emAndamento.png" alt="Imagem Em Andamento">
-                </div>
-                <h3>Nome do Projeto 2</h3>
-                <a href="#">Ver Projeto</a>
-            </div>
-
-            <div class="card">
-                <div class="img-container">
-                    <img src="assets/emAndamento.png" alt="Imagem Em Andamento">
-                </div>
-                <h3>Nome do Projeto 3</h3>
-                <a href="#">Ver Projeto</a>
-            </div>
-
-            <div class="card">
-                <div class="img-container">
-                    <img src="assets/emAndamento.png" alt="Imagem Em Andamento">
-                </div>
-                <h3>Nome do Projeto 4</h3>
-                <a href="#">Ver Projeto</a>
-            </div>
-
-            <div class="card">
-                <div class="img-container">
-                    <img src="assets/emAndamento.png" alt="Imagem Em Andamento">
-                </div>
-                <h3>Nome do Projeto 5</h3>
-                <a href="#">Ver Projeto</a>
-            </div>
-        </div>
+        <div id="projetos-list" class="area"></div>
     </section>
 
     <!-- Habilidades -->
@@ -97,7 +48,10 @@
         <p>LinkedIn: https://www.linkedin.com/in/maycon-padilha/</p>
         <p>GitHub: https://github.com/MayconPadilha</p>
     </section>
+
+    <script src="./js/projetos.js"></script>
     <script src="./js/tecnologias.js"></script>
+    <script src="./js/particles.js"></script>
 </body>
 
 </html>
