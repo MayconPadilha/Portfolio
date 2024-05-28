@@ -7,6 +7,13 @@ body {
   color: #ffffff;
 }
 
+#particles-js{
+  width: 100%;
+  height: 300%;
+  position: absolute;
+  z-index: -1;
+}
+
 h2{
   color: #ff5722;
 }
@@ -39,30 +46,29 @@ a:hover {
 
 header {
   display: flex;
-  background: url(background-image.jpg) center/cover no-repeat;
   color: #ffffff;
   padding: 8%;
   align-items: center;
   gap: 2%;
+  justify-content: center;
 }
 
 .header-content {
   padding: 0px 0% 0% 6%;
-  width: 60%;
   display: flex;
   flex-direction: column;
 }
 
 .header-content h1 {
   font-family: Satoshi, sans-serif;
-  font-size: 120px;
+  font-size: 10vh;
   font-weight: 700;
   line-height: 100%;
   margin: 0px;
 }
 
 .header-content p {
-  font-size: 28px;
+  font-size: 4vh;
 }
 
 .profile {
@@ -94,6 +100,12 @@ section {
   color: #161b22;
   margin-bottom: 1.4rem;
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+@media screen and (max-width: 870px) {
+  .card {
+    width: 100%;
+  }
 }
 
 .card:hover {
