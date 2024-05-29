@@ -1,42 +1,42 @@
 const projetos = [
     {
         "nome": "IFRS",
-        "icone": "../assets/ifrs.png",
-        "link": "#"
+        "icone": "./assets/ifrs.png",
+        "link": "https://www.linkedin.com/posts/maycon-padilha_desenvolvimento2-ifrs-angular-activity-7089245838803181568-IZ2S?utm_source=share&utm_medium=member_desktop"
     },
     {
         "nome": "InfoPlus",
-        "icone": "../assets/infoplus.png",
+        "icone": "./assets/infoplus.png",
         "link": "https://infoplus-nu.vercel.app/"
     },
     {
         "nome": "Tetra Pak",
-        "icone": "../assets/tetra pak.png",
+        "icone": "./assets/tetra pak.png",
         "link": "https://xmlbrasilprocessor.onrender.com/"
     },
     {
         "nome": "Lanterna Luminosa (Trabalho Voluntário)",
-        "icone": "../assets/lanterna-luminosa.png",
+        "icone": "./assets/lanterna-luminosa.png",
         "link": "https://lanterna-luminosa.vercel.app/"
     },
     {
         "nome": "SOS Rio Grande do Sul (Trabalho Voluntário)",
-        "icone": "../assets/sos-rs.png",
+        "icone": "./assets/sos-rs.png",
         "link": "https://lanterna-luminosa.vercel.app/"
     },
     {
         "nome": "Fieldtask Pro ( No-Code - Flutter Flow)",
-        "icone": "../assets/fieldtaskpro.png",
+        "icone": "./assets/fieldtaskpro.png",
         "link": "https://lanterna-luminosa.vercel.app/"
     },
     {
         "nome": "Spotify com React",
-        "icone": "../assets/spotify-react.png",
+        "icone": "./assets/spotify-react.png",
         "link": "https://spotify-react-henna.vercel.app/"
     },
     {
         "nome": "Buscante utilizando API do Google Books",
-        "icone": "../assets/buscante.png",
+        "icone": "./assets/buscante.png",
         "link": "https://2685-angular-rxjs-projeto-base.vercel.app/lista-livros"
     }
 ]
