@@ -99,6 +99,7 @@ section {
   color: #161b22;
   margin-bottom: 1.4rem;
   transition: transform 0.3s, box-shadow 0.3s;
+  position: relative; /* Necessário para a tooltip */
 }
 
 .card:hover {
@@ -121,6 +122,57 @@ section {
 
 .img-container:hover img {
   transform: scale(1.2);
+}
+
+.title-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card i {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #333;
+  border: solid 3px #ff5722;
+  border-radius: 50% 50%;
+  padding: 10px;
+  position: relative;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #ff5722;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -65px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ff5722 transparent transparent transparent;
+}
+
+.card i:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 .card a {
