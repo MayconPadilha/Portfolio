@@ -28,24 +28,7 @@ nav {
   justify-content: space-around;
 }
 
-nav .icons{
-  display: flex;
-  gap: 20px;
-}
-
-nav i{
-  font-size: 40px;
-}
-
-ul {
-  display: flex;
-  list-style-type: none;
-  text-align: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-a {
+nav a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
@@ -54,6 +37,23 @@ a {
 
 a:hover, nav i:hover {
   color: #ff5722;
+}
+
+nav .icons{
+  display: flex;
+  gap: 20px;
+}
+
+nav .icons i{
+  font-size: 40px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 header {
@@ -66,7 +66,7 @@ header {
 }
 
 .header-content {
-  padding: 0px 0% 0% 6%;
+  /* padding: 0px 0% 0% 6%; */
   display: flex;
   flex-direction: column;
 }
@@ -89,7 +89,7 @@ header {
   border-radius: 100%;
   background: url(https://github.com/MayconPadilha.png) center center;
   background-size: contain;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   position: relative;
 }
 
@@ -243,14 +243,27 @@ section {
   nav {
     display: flex;
     flex-direction: column-reverse;
+    gap: 18px;
+  }
+
+  nav a {
+    font-size: 24px;
   }
 
   ul li a {
     font-size: 18px;
   }
 
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 18px;
+  }
+
   .profile {
-    display: none;
+    height: 24vh;
+    width: 24vh;
+    background-repeat: no-repeat;
   }
 
   .card {
