@@ -49,7 +49,7 @@ const projetos = [
         "link": "https://spotify-react-henna.vercel.app/"
     },
     {
-        "nome": "Buscante utilizando API do Google Books",
+        "nome": "Buscante com API do Google Books",
         "icone": "./assets/buscante.png",
         "type": "fa-solid fa-book-open",
         "descricao": "Estudos",
@@ -92,6 +92,7 @@ function gerarLista(itens, containerId) {
 
         const a = document.createElement('a');
         a.href = item.link;
+        a.setAttribute('target', '_blank');
         a.textContent = 'Ver Projeto';
         
         card.appendChild(imgContainer);
