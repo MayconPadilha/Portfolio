@@ -196,6 +196,7 @@ section {
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
+  font-weight: 600;
 }
 
 .card a:hover {
@@ -228,7 +229,10 @@ section {
 
 #sobre {
   padding: 5% 10%;
-  font-size: 24px;
+}
+
+#sobre p {
+  font-size: 21px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -277,7 +281,8 @@ section {
     width: 100%;
   }
 
-  #sobre {
-    font-size: 16px;
+  #sobre p {
+    font-size: 17px;
+    line-height: 24px;
   }
 }

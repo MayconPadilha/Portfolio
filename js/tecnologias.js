@@ -117,6 +117,7 @@ function gerarLista(itens, containerId) {
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.href = item.link;
+        a.setAttribute('target', '_blank');
         a.innerHTML = `<img height="60px" width="60px" alt="Icone ${item.nome}" src="${item.icone}"/>`;
         li.appendChild(a);
         container.appendChild(li);
