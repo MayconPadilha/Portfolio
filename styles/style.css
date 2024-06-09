@@ -98,6 +98,26 @@ section {
   padding: 0% 10% 0% 10%;
 }
 
+.projetos-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.projetos-header .filtros{
+  display: flex;
+  gap: 18px;
+}
+
+.projetos-header .filtros i{
+  font-size: 24px;
+}
+
+.projetos-header .filtros i:hover{
+  color: #ff5722;
+}
+
 .area {
   display: flex;
   gap: 2%;
