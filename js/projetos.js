@@ -32,14 +32,14 @@ const projetos = [
         "icone": "./assets/sos-rs.png",
         "type": "fa-solid fa-hand-holding-heart",
         "descricao": "Voluntário",
-        "link": "https://lanterna-luminosa.vercel.app/"
+        "link": "https://sos-rs.com/"
     },
     {
         "nome": "Fieldtask Pro ( No-Code - Flutter Flow)",
         "icone": "./assets/fieldtaskpro.png",
         "type": "fa-solid fa-briefcase",
         "descricao": "Freelance",
-        "link": "https://lanterna-luminosa.vercel.app/"
+        "link": "https://app.flutterflow.io/project/field-task-p-r-o-qq8b94"
     },
     {
         "nome": "Spotify com React",
