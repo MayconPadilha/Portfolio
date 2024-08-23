@@ -43,11 +43,25 @@
             "link": "https://app.flutterflow.io/project/field-task-p-r-o-qq8b94"
         },
         {
+            "nome": "Chat em tempo real",
+            "imagem": "./assets/chatderedes.png",
+            "icon": "fa-solid fa-book-open",
+            "type": "Estudos",
+            "link": "https://projeto-chat-para-redes-de-computadores.onrender.com/"
+        },
+        {
             "nome": "Spotify com React",
             "imagem": "./assets/spotify-react.png",
             "icon": "fa-solid fa-book-open",
             "type": "Estudos",
             "link": "https://spotify-react-henna.vercel.app/"
+        },
+        {
+            "nome": "Encriptador",
+            "imagem": "./assets/Decodificador.png",
+            "icon": "fa-solid fa-book-open",
+            "type": "Estudos",
+            "link": "https://mayconpadilha.github.io/Alura-One-T7-Challenger/"
         },
         {
             "nome": "Buscante com API do Google Books",
