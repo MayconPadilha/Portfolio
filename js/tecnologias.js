@@ -1,4 +1,4 @@
-fetch("../tecnologias.json").then((response) => {
+fetch("../db2.json").then((response) => {
     response.json().then((dados) => {
         gerarListaTecnlogias(dados.tecnologias);
     })
