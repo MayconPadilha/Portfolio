@@ -1,4 +1,4 @@
-fetch("../data/tecnologias.json").then((response) => {
+fetch("../tecnologias.json").then((response) => {
     response.json().then((dados) => {
         gerarListaTecnlogias(dados.tecnologias);
     })

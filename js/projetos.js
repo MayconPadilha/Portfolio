@@ -1,6 +1,6 @@
 let projetos = [];
 
-fetch("../data/projetos.json").then((response) => {
+fetch("../projetos.json").then((response) => {
     response.json().then((dados) => {
         projetos = dados.projetos;
         gerarListaProjetos(projetos);
