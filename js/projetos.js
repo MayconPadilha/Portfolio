@@ -1,6 +1,6 @@
 let projetos = [];
 
-fetch("https://my-json-server.typicode.com/MayconPadilha/Portfolio/db").then((response) => {
+fetch("../data/projetos.json").then((response) => {
     response.json().then((dados) => {
         projetos = dados.projetos;
         gerarListaProjetos(projetos);
