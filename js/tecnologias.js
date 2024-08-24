@@ -1,118 +1,14 @@
-const tecnologias = [
-    {
-        "nome": "HTML5",
-        "icone": "https://skillicons.dev/icons?i=html",
-        "link": "https://developer.mozilla.org/pt-BR/docs/Web/HTML"
-    },
-    {
-        "nome": "CSS3",
-        "icone": "https://skillicons.dev/icons?i=css",
-        "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
-    },
-    {
-        "nome": "JavaScript",
-        "icone": "https://skillicons.dev/icons?i=js",
-        "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
-    },
-    {
-        "nome": "Angular",
-        "icone": "https://skillicons.dev/icons?i=angular",
-        "link": "https://angular.io/"
-    },
-    {
-        "nome": "React",
-        "icone": "https://skillicons.dev/icons?i=react",
-        "link": "https://pt-br.react.dev"
-    },
-    {
-        "nome": "TypeScript",
-        "icone": "https://skillicons.dev/icons?i=ts",
-        "link": "https://www.typescriptlang.org/pt/"
-    },
-    {
-        "nome": "Java",
-        "icone": "https://skillicons.dev/icons?i=java",
-        "link": "https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o)"
-    },
-    {
-        "nome": "Spring",
-        "icone": "https://skillicons.dev/icons?i=spring",
-        "link": "https://spring.io/"
-    },
-    {
-        "nome": "Node.js",
-        "icone": "https://skillicons.dev/icons?i=nodejs",
-        "link": "https://nodejs.org"
-    },
-    {
-        "nome": "NPM",
-        "icone": "https://skillicons.dev/icons?i=npm",
-        "link": "https://www.npmjs.com"
-    },
-    {
-        "nome": "C#",
-        "icone": "https://skillicons.dev/icons?i=cs",
-        "link": "https://dotnet.microsoft.com/pt-br/languages/csharp"
-    },
-    {
-        "nome": "Flutterflow",
-        "icone": "https://i.postimg.cc/PqmP6w9F/flutterflowpng.png",
-        "link": "https://flutterflow.io/"
-    },
-    {
-        "nome": "Android Studio",
-        "icone": "https://skillicons.dev/icons?i=androidstudio",
-        "link": "https://developer.android.com/studio?hl=pt-br"
-    },
-    {
-        "nome": "MySQL",
-        "icone": "https://skillicons.dev/icons?i=mysql",
-        "link": "https://www.postgresql.org"
-    },
-    {
-        "nome": "MongoDB",
-        "icone": "https://skillicons.dev/icons?i=mongodb",
-        "link": "https://cloud.google.com/"
-    },
-    {
-        "nome": "Vercel",
-        "icone": "https://skillicons.dev/icons?i=vercel",
-        "link": "https://vercel.com"
-    },
-    {
-        "nome": "Render",
-        "icone": "https://i.postimg.cc/HsC596fC/render.png",
-        "link": "https://render.com/"
-    },
-    {
-        "nome": "VS Code",
-        "icone": "https://skillicons.dev/icons?i=vscode",
-        "link": "https://code.visualstudio.com"
-    },
-    {
-        "nome": "Postman",
-        "icone": "https://i.postimg.cc/QNyBTNVk/postman.png",
-        "link": "https://www.postman.com"
-    },
-    {
-        "nome": "GitHub",
-        "icone": "https://skillicons.dev/icons?i=github",
-        "link": "https://github.com/"
-    },
-    {
-        "nome": "Git",
-        "icone": "https://skillicons.dev/icons?i=git",
-        "link": "https://git-scm.com"
-    },
-    {
-        "nome": "Figma",
-        "icone": "https://skillicons.dev/icons?i=figma",
-        "link": "https://www.figma.com"
-    }
-];
+let tecnologias = [];
 
-function gerarListaTecnologias(itens, containerId) {
-    const container = document.getElementById(containerId);
+fetch("https://mayconpadilha.github.io/Portfolio/data/tecnologias.json").then((response) => {
+    response.json().then((dados) => {
+        tecnologias = dados.tecnologias;
+        gerarListaProjetos(tecnologias);
+    })
+})
+
+function gerarListaTecnologias(itens) {
+    const container = document.getElementById('tecnologias-list');
     itens.forEach(item => {
         const li = document.createElement('li');
         const a = document.createElement('a');
@@ -122,7 +18,3 @@ function gerarListaTecnologias(itens, containerId) {
         container.appendChild(li);
     });
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    gerarListaTecnologias(tecnologias, 'tecnologias-list');
-});
