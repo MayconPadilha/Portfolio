@@ -1,11 +1,19 @@
+document.addEventListener('DOMContentLoaded', async () => {
+    await carregarProjetos();
+});
+
 let projetos = [];
 
-fetch("https://mayconpadilha.github.io/Portfolio/data/projetos.json").then((response) => {
-    response.json().then((dados) => {
+async function carregarProjetos() {
+    try {
+        const response = await fetch("https://mayconpadilha.github.io/Portfolio/data/projetos.json");
+        const dados = await response.json();
         projetos = dados.projetos;
         gerarListaProjetos(projetos);
-    })
-})
+    } catch (error) {
+        console.error('Erro ao carregar os projetos:', error);
+    }
+}
 
 function gerarListaProjetos(itens) {
     const container = document.getElementById('projetos-list');

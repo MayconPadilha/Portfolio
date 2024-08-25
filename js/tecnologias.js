@@ -1,11 +1,16 @@
-let tecnologias = [];
+document.addEventListener('DOMContentLoaded', async () => {
+    await carregarTecnologias();
+});
 
-fetch("https://mayconpadilha.github.io/Portfolio/data/tecnologias.json").then((response) => {
-    response.json().then((dados) => {
-        tecnologias = dados.tecnologias;
-        gerarListaProjetos(tecnologias);
-    })
-})
+async function carregarTecnologias() {
+    try {
+        const response = await fetch("https://mayconpadilha.github.io/Portfolio/data/tecnologias.json");
+        const dados = await response.json();
+        gerarListaTecnologias(dados.tecnologias);
+    } catch (error) {
+        console.error('Erro ao carregar tecnologias:', error);
+    }
+}
 
 function gerarListaTecnologias(itens) {
     const container = document.getElementById('tecnologias-list');
