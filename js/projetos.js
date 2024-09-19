@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 let projetos = [];
+let swiperInstance;
 
 async function carregarProjetos() {
     try {
@@ -16,13 +17,12 @@ async function carregarProjetos() {
 }
 
 function gerarListaProjetos(itens) {
-
-    const swiperContainer = document.querySelector('swiper-container');
-    swiperContainer.innerHTML = '';
+    const swiperWrapper = document.querySelector('.swiper-wrapper');
+    swiperWrapper.innerHTML = '';
 
     itens.forEach(item => {
-
-        const swiperSlide = document.createElement('swiper-slide');
+        const swiperSlide = document.createElement('div');
+        swiperSlide.classList.add('swiper-slide');
 
         const card = document.createElement('div');
         card.classList.add('card');
@@ -63,8 +63,34 @@ function gerarListaProjetos(itens) {
         card.appendChild(titleContainer);
 
         swiperSlide.appendChild(card);
-        swiperContainer.appendChild(swiperSlide);
+        swiperWrapper.appendChild(swiperSlide);
     });
+
+    if (swiperInstance) {
+        swiperInstance.destroy(true, true);
+    }
+
+    swiperInstance = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        grid: {
+            rows: 1,
+        },
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+    });
+
+    if (swiperWrapper.children.length <= 3) { 
+        swiperInstance.autoplay.stop();
+    } 
+
+    swiperInstance.slideTo(0);
 }
 
 document.querySelectorAll(".filtros i").forEach(filter => {
