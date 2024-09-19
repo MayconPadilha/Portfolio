@@ -36,7 +36,7 @@
             "link": "https://sos-rs.com/"
         },
         {
-            "nome": "Fieldtask Pro (No-Code - Flutter Flow)",
+            "nome": "Fieldtask Pro (Flutter Flow)",
             "imagem": "./assets/fieldtaskpro.png",
             "icon": "fa-solid fa-briefcase",
             "type": "Freelance",
@@ -64,7 +64,7 @@
             "link": "https://mayconpadilha.github.io/Alura-One-T7-Challenger/"
         },
         {
-            "nome": "Buscante com API do Google Books",
+            "nome": "Buscante API do Google Books",
             "imagem": "./assets/buscante.png",
             "icon": "fa-solid fa-book-open",
             "type": "Estudos",

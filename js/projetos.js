@@ -16,9 +16,19 @@ async function carregarProjetos() {
 }
 
 function gerarListaProjetos(itens) {
-    const container = document.getElementById('projetos-list');
-    container.innerHTML = '';
+    // const container = document.getElementById('projetos-list');
+    // container.innerHTML = '';
+
+    // const slideContainer = document.querySelector('swiper-container');
+    slideContainer.innerHTML = '';
+
+    // const swiperWrapper = document.createElement('swiper-wrapper');
+    // swiperWrapper.ATTRIBUTE_NODE.gridRows = '2';
+
     itens.forEach(item => {
+
+        const swiperSlide = document.createElement('swiper-slide');
+
         const card = document.createElement('div');
         card.classList.add('card');
 
@@ -56,10 +66,15 @@ function gerarListaProjetos(itens) {
 
         card.appendChild(imgContainer);
         card.appendChild(titleContainer);
-        card.appendChild(a);
+        // card.appendChild(a);
 
-        container.appendChild(card);
+        // swiperSlide.appendChild(card);
+        swiperSlide.appendChild(card);
+        // swiperWrapper.appendChild(swiperSlide);
+        slideContainer.appendChild(swiperSlide);
     });
+
+    // slideContainer.appendChild(swiperWrapper);
 }
 
 document.querySelectorAll(".filtros i").forEach(filter => {
@@ -70,11 +85,14 @@ document.querySelectorAll(".filtros i").forEach(filter => {
 });
 
 function filterProjects(filtro) {
+    const slideContainer = document.querySelector('swiper-container');
     let filteredProjects;
     if (filtro === "all") {
         filteredProjects = projetos;
     } else {
         filteredProjects = projetos.filter(project => project.type === filtro);
+        slideContainer.setAttribute('grid-rows', '1'); 
+        // slideContainer.ATTRIBUTE_NODE.gridRows = '1';
     }
     gerarListaProjetos(filteredProjects);
 }

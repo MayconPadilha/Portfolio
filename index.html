@@ -23,14 +23,15 @@
         <div class="icons">
             <a href="https://github.com/MayconPadilha" target="_blank">
                 <i class="fa-brands fa-github" aria-hidden="true" alt="icone do Github"></i>
-            </a>    
+            </a>
             <a href="https://www.linkedin.com/in/maycon-padilha/" target="_blank">
                 <i class="fa-brands fa-linkedin" aria-hidden="true" alt="icone do Github"></i>
             </a>
             <a href="https://wa.me/5551994802544" target="_blank">
                 <i class="fa-brands fa-whatsapp" aria-hidden="true" alt="icone do Whatsapp"></i>
             </a>
-            <a href="https://drive.google.com/file/d/1a8lMbzvOPkjRHo3LR7oMwOQjdpjS7ecO/view?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/file/d/1a8lMbzvOPkjRHo3LR7oMwOQjdpjS7ecO/view?usp=sharing"
+                target="_blank">
                 <i class="fa-solid fa-file-pdf" aria-hidden="true" alt="icone do Github"></i>
             </a>
         </div>
@@ -56,14 +57,36 @@
                 <i class="fa-solid fa-book-open" aria-hidden="true" data-filter="Estudos"></i>
             </div>
         </div>
-        <div id="projetos-list" class="area"></div>
+
+    <!-- <div id="projetos-list" class="area">
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3" grid-rows="2"></swiper-container>
+    </div> -->
+
+    <main class="area">
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3" grid-rows="2"
+    space-between="30">
+    <swiper-slide><img src="https://swiperjs.com/demos/images/nature-1.jpg"></swiper-slide>
+    <swiper-slide><img src="https://swiperjs.com/demos/images/nature-2.jpg"></swiper-slide></swiper-slide>
+    <swiper-slide><img src="https://swiperjs.com/demos/images/nature-3.jpg"></swiper-slide></swiper-slide>
+    <swiper-slide><img src="https://swiperjs.com/demos/images/nature-4.jpg"></swiper-slide></swiper-slide>
+    <swiper-slide><img src="https://swiperjs.com/demos/images/nature-5.jpg"></swiper-slide></swiper-slide>
+    <swiper-slide><img src="https://swiperjs.com/demos/images/nature-6.jpg"></swiper-slide></swiper-slide>
+    <swiper-slide><img src="https://swiperjs.com/demos/images/nature-7.jpg"></swiper-slide></swiper-slide>
+    <swiper-slide><img src="https://swiperjs.com/demos/images/nature-8.jpg"></swiper-slide></swiper-slide>
+    <swiper-slide><img src="https://swiperjs.com/demos/images/nature-9.jpg"></swiper-slide></swiper-slide>
+  </swiper-container>
+    </div>
+    
+    
     </section>
 
     <!-- Habilidades -->
-    <section id="tecnologias" class="tecnologias">
-        <h2>Tecnologias</h2>
-        <div id="tecnologias-list" class="tecnologias-list"></div>
-    </section>
+    <div class="container-tecnologias">
+        <section id="tecnologias" class="tecnologias">
+            <h2>Tecnologias</h2>
+            <div id="tecnologias-list" class="tecnologias-list"></div>
+        </section>
+    </div>
 
     <!-- Sobre -->
     <section id="sobre">
@@ -77,6 +100,8 @@
     <script src="./js/projetos.js"></script>
     <script src="./js/tecnologias.js"></script>
     <script src="./js/particles.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 
 </html>
