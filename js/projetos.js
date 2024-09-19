@@ -16,14 +16,9 @@ async function carregarProjetos() {
 }
 
 function gerarListaProjetos(itens) {
-    // const container = document.getElementById('projetos-list');
-    // container.innerHTML = '';
 
-    // const slideContainer = document.querySelector('swiper-container');
-    slideContainer.innerHTML = '';
-
-    // const swiperWrapper = document.createElement('swiper-wrapper');
-    // swiperWrapper.ATTRIBUTE_NODE.gridRows = '2';
+    const swiperContainer = document.querySelector('swiper-container');
+    swiperContainer.innerHTML = '';
 
     itens.forEach(item => {
 
@@ -31,6 +26,10 @@ function gerarListaProjetos(itens) {
 
         const card = document.createElement('div');
         card.classList.add('card');
+
+        const a = document.createElement('a');
+        a.href = item.link;
+        a.setAttribute('target', '_blank');
 
         const imgContainer = document.createElement('div');
         imgContainer.classList.add('img-container');
@@ -40,6 +39,7 @@ function gerarListaProjetos(itens) {
         img.alt = `imagem ${item.nome}`;
 
         imgContainer.appendChild(img);
+        a.appendChild(imgContainer);
 
         const titleContainer = document.createElement('div');
         titleContainer.classList.add('title-container');
@@ -59,22 +59,12 @@ function gerarListaProjetos(itens) {
         titleContainer.appendChild(h3);
         titleContainer.appendChild(iconIcon);
 
-        const a = document.createElement('a');
-        a.href = item.link;
-        a.setAttribute('target', '_blank');
-        a.textContent = 'Ver Projeto';
-
-        card.appendChild(imgContainer);
+        card.appendChild(a);
         card.appendChild(titleContainer);
-        // card.appendChild(a);
 
-        // swiperSlide.appendChild(card);
         swiperSlide.appendChild(card);
-        // swiperWrapper.appendChild(swiperSlide);
-        slideContainer.appendChild(swiperSlide);
+        swiperContainer.appendChild(swiperSlide);
     });
-
-    // slideContainer.appendChild(swiperWrapper);
 }
 
 document.querySelectorAll(".filtros i").forEach(filter => {
@@ -85,14 +75,11 @@ document.querySelectorAll(".filtros i").forEach(filter => {
 });
 
 function filterProjects(filtro) {
-    const slideContainer = document.querySelector('swiper-container');
     let filteredProjects;
     if (filtro === "all") {
         filteredProjects = projetos;
     } else {
         filteredProjects = projetos.filter(project => project.type === filtro);
-        slideContainer.setAttribute('grid-rows', '1'); 
-        // slideContainer.ATTRIBUTE_NODE.gridRows = '1';
     }
     gerarListaProjetos(filteredProjects);
 }
