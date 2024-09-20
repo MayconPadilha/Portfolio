@@ -21,7 +21,7 @@ h2 {
 
 nav {
   display: flex;
-  padding: 10px 0%;
+  padding: 10px 20px;
   position: relative;
   align-items: center;
   justify-content: space-between;
@@ -239,11 +239,11 @@ section {
   background: #bdc3c7;
   position: relative;
 }
-
+/* 
 .tecnologias {
   padding: 1% 0%;
   margin: 0 auto;
-}
+} */
 
 .tecnologias .tecnologias-list {
   display: flex;
@@ -262,23 +262,28 @@ section {
   transform: translateY(-10px);
 }
 
-#sobre {
+/* #sobre {
   padding: 5% 0%;
-}
+} */
 
 #sobre p {
   font-size: 21px;
 }
 
-/* @media screen and (max-width: 1300px) {
-  .profile {
-    height: 30vh;
-    width: 30vh;
+@media screen and (max-width: 1300px) {
+
+  .nav{
+    padding: 0px 20px;
   }
 
-  .card {
-    width: 26%;
+  section{
+    padding: 0px 20px;
   }
+
+  /* .profile {
+    height: 30vh;
+    width: 30vh;
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -294,6 +299,7 @@ section {
 
   header {
     display: flex;
+    padding: 50px 0%;
     flex-direction: column-reverse;
     gap: 18px;
   }
@@ -303,13 +309,16 @@ section {
   }
 
   .header-content h2 {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 
   .profile {
     height: 24vh;
     width: 24vh;
-    background-repeat: no-repeat;
+  }
+
+  section {
+    width: 350px;
   }
 
   .card {
@@ -320,4 +329,4 @@ section {
     font-size: 17px;
     line-height: 24px;
   }
-} */
+}
