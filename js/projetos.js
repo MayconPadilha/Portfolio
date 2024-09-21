@@ -88,7 +88,7 @@ function gerarListaProjetos(itens) {
             // when window width is >= 320px
             320: {
                 slidesPerView: 1,
-                spaceBetween: 10
+                spaceBetween: 10,
             },
             // when window width is >= 480px
             480: {
@@ -108,7 +108,7 @@ function gerarListaProjetos(itens) {
         }
     });
 
-    if (swiperWrapper.children.length <= 3) { 
+    if (swiperWrapper.children.length <= 3 && swiperInstance.slidesPerView > 1) {
         swiperInstance.autoplay.stop();
     } 
 

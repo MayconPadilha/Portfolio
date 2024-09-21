@@ -59,7 +59,13 @@ nav .icons i {
   gap: 20px;
 }
 
-header {
+section {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2% 0%;
+}
+
+.principal {
   display: flex;
   color: #ffffff;
   padding: 114px 0%;
@@ -70,12 +76,12 @@ header {
   max-width: 1200px;
 }
 
-.header-content {
+.principal-content {
   display: flex;
   flex-direction: column;
 }
 
-.header-content h1 {
+.principal-content h1 {
   font-family: Satoshi, sans-serif;
   font-size: 60px;
   font-weight: 700;
@@ -83,8 +89,8 @@ header {
   margin: 0px;
 }
 
-.header-content p {
-  font-size: 4vh;
+.principal-content p {
+  font-size: 28px;
 }
 
 .profile {
@@ -94,11 +100,6 @@ header {
   background: url(https://github.com/MayconPadilha.png) center center;
   background-size: cover;
   position: relative;
-}
-
-section {
-  margin: 0 auto;
-  max-width: 1200px;
 }
 
 .projetos-header {
@@ -119,6 +120,10 @@ section {
 
 .projetos-header .filtros i:hover {
   color: #ff5722;
+}
+
+.swiper {
+  padding-top: 10px;
 }
 
 .swiper-container {
@@ -239,11 +244,6 @@ section {
   background: #bdc3c7;
   position: relative;
 }
-/* 
-.tecnologias {
-  padding: 1% 0%;
-  margin: 0 auto;
-} */
 
 .tecnologias .tecnologias-list {
   display: flex;
@@ -262,31 +262,21 @@ section {
   transform: translateY(-10px);
 }
 
-/* #sobre {
-  padding: 5% 0%;
-} */
-
 #sobre p {
   font-size: 21px;
 }
 
 @media screen and (max-width: 1300px) {
 
-  .nav{
-    padding: 0px 20px;
+  section {
+    margin: 0 auto;
+    padding: 1% 5% 5% 5%;
   }
 
-  section{
-    padding: 0px 20px;
-  }
-
-  /* .profile {
-    height: 30vh;
-    width: 30vh;
-  } */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+  
   nav {
     display: flex;
     flex-direction: column;
@@ -297,28 +287,24 @@ section {
     font-size: 21px;
   }
 
-  header {
+  .principal {
     display: flex;
     padding: 50px 0%;
     flex-direction: column-reverse;
     gap: 18px;
   }
 
-  .header-content h1 {
-    font-size: 2.5em;
+  .principal-content h1 {
+    font-size: 42px;
   }
 
-  .header-content h2 {
-    font-size: 1.5em;
+  .principal-content h2 {
+    font-size: 25px;
   }
 
   .profile {
-    height: 24vh;
-    width: 24vh;
-  }
-
-  section {
-    width: 350px;
+    height: 160px;
+    width: 160px;
   }
 
   .card {
