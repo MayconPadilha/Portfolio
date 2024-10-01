@@ -266,6 +266,10 @@ section {
   font-size: 21px;
 }
 
+#sobre span{
+  color: #ff5722;
+}
+
 @media screen and (max-width: 1300px) {
 
   section {
