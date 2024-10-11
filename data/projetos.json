@@ -15,6 +15,13 @@
             "link": "https://infoplus-nu.vercel.app/"
         },
         {
+            "nome": "PedeJá",
+            "imagem": "./assets/pedeja.png",
+            "icon": "fa-solid fa-briefcase",
+            "type": "Freelance",
+            "link": "https://food-ordering-frontend-delta.vercel.app/"
+        },
+        {
             "nome": "Tetra Pak",
             "imagem": "./assets/tetra pak.png",
             "icon": "fa-solid fa-briefcase",
