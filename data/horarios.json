@@ -1,0 +1,582 @@
+{
+    "r": {
+        "rights": {
+            "subjects": true,
+            "classes": true,
+            "teachers": true,
+            "classrooms": true,
+            "students": true,
+            "igroups": true,
+            "classroomsupervision": true,
+            "teachers_summary": true,
+            "classes_summary": true,
+            "classrooms_summary": true,
+            "igroups_summary": true
+        },
+        "dbiAccessorRes": {
+            "type": "ttuidocdbi",
+            "dbid": "",
+            "tables": [
+                {
+                    "id": "globals",
+                    "def": {
+                        "id": "globals",
+                        "name": "Horário Escolar",
+                        "item_name": "Horário Escolar",
+                        "icon": "/global/pics/ui/school_32.svg"
+                    },
+                    "data_rows": [
+                        {
+                            "id": "1",
+                            "name": "",
+                            "settings": {
+                                "m_nZlozitostGener": 1,
+                                "m_bAllowZlavnenie": true,
+                                "m_bGenerDraft": false,
+                                "m_nCoGenerovat": 0,
+                                "m_nSchoolType": 0,
+                                "m_nGapsCounting": 0,
+                                "m_nTurciTyp": 0,
+                                "m_bSujectsInMinutes": false,
+                                "m_bShowComboDays": false,
+                                "name_format": "FSL",
+                                "m_strPrintHeaderText": "",
+                                "m_strDateBellowTimeTable": "Validade: 16/08/2024-21/12/2024",
+                                "m_bPrintDozory": true,
+                                "m_bPrintDozoryVSuhrnnych": false,
+                                "m_bPrintDozoryColor": false,
+                                "m_bPrintSinglesSpolu": false,
+                                "m_bPrintDoublesAsSingles": false,
+                                "m_nTimeFormat": 0,
+                                "m_nPrvyDen": 0,
+                                "m_bPrintDayAsNumber": false,
+                                "m_DozoryKriteria": {
+                                    "ucitel_limit_pocet": 0,
+                                    "ucitel_limit_minuty": 0,
+                                    "ucitel_rovnomerne_pocet": 0,
+                                    "ucitel_rovnomerne_minuty": 0,
+                                    "ucitel_uci_predalebopo": 0,
+                                    "ucitel_uci_predajpo": 0,
+                                    "ucitel_uci_vsusednej_predalebopo": 0,
+                                    "ucitel_uci_vsusednej_predajpo": 0,
+                                    "ucitel_cezdvojhodinovku": 0,
+                                    "ucitel_prazdnyden": 0,
+                                    "ucitel_predvyucovanim": 0,
+                                    "ucitel_povyucovani": 0,
+                                    "ucitel_vjedenden": 0,
+                                    "ucitel_zasebou": 0
+                                },
+                                "draft_options": {}
+                            },
+                            "customfields": [],
+                            "reg_name": "Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - Campus Restinga, Rua Alberto Hoffmann, 285, Restinga, Porto Alegre",
+                            "tt_datefrom": ""
+                        }
+                    ],
+                    "data_columns": [
+                        "name",
+                        "settings",
+                        "customfields",
+                        "reg_name",
+                        "tt_datefrom"
+                    ]
+                },
+                {
+                    "id": "periods",
+                    "def": {
+                        "id": "periods",
+                        "name": "Períodos",
+                        "item_name": "Períodos",
+                        "icon": "/global/pics/ui/time_32.svg"
+                    },
+                    "data_rows": [
+                        {
+                            "id": "1",
+                            "period": "1",
+                            "name": "1",
+                            "short": "1",
+                            "starttime": "07:30",
+                            "endtime": "08:20",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "2",
+                            "period": "2",
+                            "name": "2",
+                            "short": "2",
+                            "starttime": "08:20",
+                            "endtime": "09:10",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "3",
+                            "period": "3",
+                            "name": "3",
+                            "short": "3",
+                            "starttime": "09:10",
+                            "endtime": "10:00",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "4",
+                            "period": "4",
+                            "name": "4",
+                            "short": "4",
+                            "starttime": "10:20",
+                            "endtime": "11:10",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "5",
+                            "period": "5",
+                            "name": "5",
+                            "short": "5",
+                            "starttime": "11:10",
+                            "endtime": "12:00",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "6",
+                            "period": "6",
+                            "name": "Entre Turnos",
+                            "short": "Entre Turnos",
+                            "starttime": "12:00",
+                            "endtime": "13:30",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "7",
+                            "period": "7",
+                            "name": "1",
+                            "short": "1",
+                            "starttime": "13:30",
+                            "endtime": "14:20",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "8",
+                            "period": "8",
+                            "name": "2",
+                            "short": "2",
+                            "starttime": "14:20",
+                            "endtime": "15:10",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "9",
+                            "period": "9",
+                            "name": "3",
+                            "short": "3",
+                            "starttime": "15:10",
+                            "endtime": "16:00",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "10",
+                            "period": "10",
+                            "name": "4",
+                            "short": "4",
+                            "starttime": "16:20",
+                            "endtime": "17:10",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "11",
+                            "period": "11",
+                            "name": "5",
+                            "short": "5",
+                            "starttime": "17:10",
+                            "endtime": "18:00",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "12",
+                            "period": "12",
+                            "name": "0",
+                            "short": "0",
+                            "starttime": "18:10",
+                            "endtime": "19:00",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "13",
+                            "period": "13",
+                            "name": "1",
+                            "short": "1",
+                            "starttime": "19:00",
+                            "endtime": "19:50",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "14",
+                            "period": "14",
+                            "name": "2",
+                            "short": "2",
+                            "starttime": "19:50",
+                            "endtime": "20:40",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "15",
+                            "period": "15",
+                            "name": "3",
+                            "short": "3",
+                            "starttime": "20:50",
+                            "endtime": "21:40",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        },
+                        {
+                            "id": "16",
+                            "period": "16",
+                            "name": "4",
+                            "short": "4",
+                            "starttime": "21:40",
+                            "endtime": "22:30",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": []
+                        }
+                    ],
+                    "data_columns": [
+                        "period",
+                        "name",
+                        "short",
+                        "starttime",
+                        "endtime",
+                        "daydata",
+                        "printinsummary",
+                        "printinteacher",
+                        "printinclass",
+                        "printinclassroom",
+                        "printonlyinbells"
+                    ]
+                },
+                {
+                    "id": "breaks",
+                    "def": {
+                        "id": "breaks",
+                        "name": "Intervalos",
+                        "item_name": "Intervalo",
+                        "icon": "/global/pics/ui/break_32.png"
+                    },
+                    "data_rows": [
+                        {
+                            "id": "4",
+                            "name": "Intervalo",
+                            "short": "Intervalo",
+                            "starttime": "10:00",
+                            "endtime": "10:20",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": [],
+                            "printtext": ""
+                        },
+                        {
+                            "id": "10",
+                            "name": "Intervalo",
+                            "short": "Intervalo",
+                            "starttime": "16:00",
+                            "endtime": "16:20",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": [],
+                            "printtext": ""
+                        },
+                        {
+                            "id": "15",
+                            "name": "Intervalo",
+                            "short": "Intervalo",
+                            "starttime": "20:40",
+                            "endtime": "20:50",
+                            "daydata": {},
+                            "printinsummary": true,
+                            "printinteacher": true,
+                            "printinclass": true,
+                            "printinclassroom": true,
+                            "printonlyinbells": [],
+                            "printtext": ""
+                        }
+                    ],
+                    "data_columns": [
+                        "name",
+                        "short",
+                        "starttime",
+                        "endtime",
+                        "daydata",
+                        "printinsummary",
+                        "printinteacher",
+                        "printinclass",
+                        "printinclassroom",
+                        "printonlyinbells",
+                        "printtext"
+                    ]
+                },
+                {
+                    "id": "classrooms",
+                    "def": {
+                        "id": "classrooms",
+                        "name": "Salas de aula",
+                        "item_name": "Sala de aula",
+                        "icon": "/global/pics/ui/classroom_32.svg"
+                    },
+                    "data_rows": [
+                        {
+                            "id": "-1",
+                            "name": "301",
+                            "short": "301",
+                            "buildingid": "",
+                            "bell": "",
+                            "color": "#990033"
+                        }
+                    ],
+                    "data_columns": [
+                        "name",
+                        "short",
+                        "buildingid",
+                        "bell",
+                        "color"
+                    ]
+                },
+                {
+                    "id": "classes",
+                    "def": {
+                        "id": "classes",
+                        "name": "Turmas",
+                        "item_name": "Turma",
+                        "icon": "/global/pics/ui/class_32.svg"
+                    },
+                    "data_rows": [
+                        {
+                            "id": "*1",
+                            "name": "A TURMA VAI AQUI",
+                            "short": "111",
+                            "teacherid": "",
+                            "classroomids": [],
+                            "bell": "0",
+                            "color": "#3333CC",
+                            "customfields": [],
+                            "printsubjectpictures": true,
+                            "edupageid": "",
+                            "classroomid": "",
+                            "teacherids": []
+                        }
+                    ],
+                    "data_columns": [
+                        "name",
+                        "short",
+                        "teacherid",
+                        "classroomids",
+                        "bell",
+                        "color",
+                        "customfields",
+                        "printsubjectpictures",
+                        "edupageid",
+                        "classroomid",
+                        "teacherids"
+                    ]
+                },
+                {
+                    "id": "subjects",
+                    "def": {
+                        "id": "subjects",
+                        "name": "Disciplinas",
+                        "item_name": "Disciplina",
+                        "icon": "/global/pics/ui/subject_32.svg"
+                    },
+                    "data_rows": [
+                        {
+                            "id": "*173",
+                            "name": "",
+                            "short": " / Políticas e Legislação Cultural ",
+                            "color": "#0020C0",
+                            "picture_url": "",
+                            "contract_weight": 1,
+                            "edupageid": ""
+                        }
+                    ],
+                    "data_columns": [
+                        "name",
+                        "short",
+                        "color",
+                        "picture_url",
+                        "contract_weight",
+                        "edupageid"
+                    ]
+                },
+                {
+                    "id": "teachers",
+                    "def": {
+                        "id": "teachers",
+                        "name": "Professores",
+                        "item_name": "Professor",
+                        "icon": "/global/pics/ui/teacher_32.svg"
+                    },
+                    "data_rows": [
+                        {
+                            "id": "*1",
+                            "nameprefix": "",
+                            "namesuffix": "",
+                            "name": "Alexandre Adriano dos Santos Lima",
+                            "short": "Alexandre L",
+                            "bell": "",
+                            "color": "#006666",
+                            "fontcolorprint": "",
+                            "fontcolorprint2": "",
+                            "customfields": [],
+                            "edupageid": "",
+                            "classids": []
+                        }
+                    ],
+                    "data_columns": [
+                        "nameprefix",
+                        "namesuffix",
+                        "name",
+                        "short",
+                        "bell",
+                        "color",
+                        "fontcolorprint",
+                        "fontcolorprint2",
+                        "customfields",
+                        "edupageid",
+                        "classids"
+                    ]
+                },
+                {
+                    "id": "groups",
+                    "def": {
+                        "id": "groups",
+                        "name": "Grupos",
+                        "item_name": "Grupo",
+                        "icon": "/global/pics/ui/group_32.svg"
+                    },
+                    "data_rows": [
+                        {
+                            "id": "*1",
+                            "name": "Turma completa",
+                            "classid": "*1",
+                            "entireclass": true,
+                            "ascttdivision": "",
+                            "divisionid": "*1:",
+                            "color": "#FF0000"
+                        }
+                    ],
+                    "data_columns": [
+                        "name",
+                        "classid",
+                        "entireclass",
+                        "ascttdivision",
+                        "divisionid",
+                        "color"
+                    ]
+                },
+                {
+                    "id": "studentsubjects",
+                    "def": {
+                        "id": "studentsubjects",
+                        "name": "Seminários",
+                        "item_name": "Seminários",
+                        "icon": "/timetable/pics/app/office/seminar_32.png"
+                    },
+                    "data_rows": [],
+                    "data_columns": [
+                        "studentid",
+                        "subjectid",
+                        "seminargroup",
+                        "importance"
+                    ]
+                }
+            ],
+            "changeEvents": {
+                "dbi:timetables": 8694092,
+                "ttonline_logo": 8318556
+            }
+        },
+        "_changeEvents": {
+            "dbi:global_settings": 8485943
+        }
+    }
+}
