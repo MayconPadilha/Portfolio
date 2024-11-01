@@ -23,10 +23,17 @@
         },
         {
             "nome": "Tetra Pak",
-            "imagem": "./assets/tetra pak.png",
+            "imagem": "./assets/tetra-pak.png",
             "icon": "fa-solid fa-briefcase",
             "type": "Freelance",
             "link": "https://xmlbrasilprocessor.onrender.com/"
+        },
+        {
+            "nome": "Frontend Agrada Digital",
+            "imagem": "./assets/agrada-digital.png",
+            "icon": "fa-solid fa-dumbbell",
+            "type": "Desafio",
+            "link": "https://mayconpadilha.github.io/Desafio-Frontend/"
         },
         {
             "nome": "Lanterna Luminosa",
