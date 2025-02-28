@@ -36,7 +36,7 @@ function gerarListaProjetos(itens) {
 
         const img = document.createElement('img');
         img.src = item.imagem;
-        img.alt = `imagem ${item.nome}`;
+        img.alt = `Imagem do projeto ${item.nome}`;
 
         imgContainer.appendChild(img);
         a.appendChild(imgContainer);
@@ -52,7 +52,7 @@ function gerarListaProjetos(itens) {
 
         const tooltip = document.createElement('span');
         tooltip.className = 'tooltip';
-        tooltip.textContent = item.type;
+        // tooltip.textContent = item.type;
 
         iconIcon.appendChild(tooltip);
 
@@ -72,9 +72,6 @@ function gerarListaProjetos(itens) {
 
     swiperInstance = new Swiper(".mySwiper", {
         slidesPerView: 3,
-        grid: {
-            rows: 1,
-        },
         spaceBetween: 30,
         pagination: {
             el: ".swiper-pagination",
@@ -85,49 +82,32 @@ function gerarListaProjetos(itens) {
             disableOnInteraction: false,
         },
         breakpoints: {
-            // when window width is >= 320px
             320: {
                 slidesPerView: 1,
-                spaceBetween: 10,
+                spaceBetween: 20,
             },
-            // when window width is >= 480px
-            480: {
+            768: {
                 slidesPerView: 2,
-                spaceBetween: 20
+                spaceBetween: 20,
             },
-            // when window width is >= 640px
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
-
-            1200:{
+            1024: {
                 slidesPerView: 3,
-                spaceBetween: 30
-            }
+                spaceBetween: 30,
+            },
         }
     });
-
-    if (swiperWrapper.children.length <= 3 && swiperInstance.slidesPerView > 1) {
-        swiperInstance.autoplay.stop();
-    } 
-
-    swiperInstance.slideTo(0);
 }
 
-document.querySelectorAll(".filtros i").forEach(filter => {
+document.querySelectorAll(".filtros button").forEach(filter => {
     filter.addEventListener("click", () => {
+        document.querySelectorAll(".filtros button").forEach(btn => btn.classList.remove("active"));
+        filter.classList.add("active");
         const filterType = filter.getAttribute("data-filter");
         filterProjects(filterType);
     });
 });
 
 function filterProjects(filtro) {
-    let filteredProjects;
-    if (filtro === "all") {
-        filteredProjects = projetos;
-    } else {
-        filteredProjects = projetos.filter(project => project.type === filtro);
-    }
+    let filteredProjects = filtro === "all" ? projetos : projetos.filter(project => project.type === filtro);
     gerarListaProjetos(filteredProjects);
 }
