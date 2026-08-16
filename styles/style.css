@@ -152,7 +152,7 @@ body {
 .filter-btn:hover,
 .filter-btn.active {
   background: var(--primary-color);
-  color: var(--bg-color);
+  color: #ffffff;
 }
 
 .swiper-pagination {
