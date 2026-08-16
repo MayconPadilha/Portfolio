@@ -1,6 +1,11 @@
 {
     "tecnologias": [
         {
+            "nome": "Angular",
+            "icone": "https://skillicons.dev/icons?i=angular",
+            "link": "https://angular.io/"
+        },
+        {
             "nome": "HTML5",
             "icone": "https://skillicons.dev/icons?i=html",
             "link": "https://developer.mozilla.org/pt-BR/docs/Web/HTML"
@@ -11,24 +16,14 @@
             "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
         },
         {
-            "nome": "JavaScript",
-            "icone": "https://skillicons.dev/icons?i=js",
-            "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
-        },
-        {
-            "nome": "Angular",
-            "icone": "https://skillicons.dev/icons?i=angular",
-            "link": "https://angular.io/"
-        },
-        {
-            "nome": "React",
-            "icone": "https://skillicons.dev/icons?i=react",
-            "link": "https://pt-br.react.dev"
-        },
-        {
             "nome": "TypeScript",
             "icone": "https://skillicons.dev/icons?i=ts",
             "link": "https://www.typescriptlang.org/pt/"
+        },
+        {
+            "nome": "JavaScript",
+            "icone": "https://skillicons.dev/icons?i=js",
+            "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
         },
         {
             "nome": "Java",
@@ -46,14 +41,9 @@
             "link": "https://nodejs.org"
         },
         {
-            "nome": "NPM",
-            "icone": "https://skillicons.dev/icons?i=npm",
-            "link": "https://www.npmjs.com"
-        },
-        {
-            "nome": "C#",
-            "icone": "https://skillicons.dev/icons?i=cs",
-            "link": "https://dotnet.microsoft.com/pt-br/languages/csharp"
+            "nome": "Jenkins",
+            "icone": "https://skillicons.dev/icons?i=jenkins",
+            "link": "https://www.jenkins.io/"
         },
         {
             "nome": "Flutterflow",
@@ -61,34 +51,19 @@
             "link": "https://flutterflow.io/"
         },
         {
-            "nome": "Android Studio",
-            "icone": "https://skillicons.dev/icons?i=androidstudio",
-            "link": "https://developer.android.com/studio?hl=pt-br"
+            "nome": "PostgreSQL",
+            "icone": "https://skillicons.dev/icons?i=postgres",
+            "link": "https://www.postgresql.org"
         },
         {
             "nome": "MySQL",
             "icone": "https://skillicons.dev/icons?i=mysql",
-            "link": "https://www.postgresql.org"
+            "link": "https://www.mysql.com/"
         },
         {
-            "nome": "MongoDB",
-            "icone": "https://skillicons.dev/icons?i=mongodb",
-            "link": "https://cloud.google.com/"
-        },
-        {
-            "nome": "Vercel",
-            "icone": "https://skillicons.dev/icons?i=vercel",
-            "link": "https://vercel.com"
-        },
-        {
-            "nome": "Render",
-            "icone": "https://i.postimg.cc/HsC596fC/render.png",
-            "link": "https://render.com/"
-        },
-        {
-            "nome": "VS Code",
-            "icone": "https://skillicons.dev/icons?i=vscode",
-            "link": "https://code.visualstudio.com"
+            "nome": "Docker",
+            "icone": "https://skillicons.dev/icons?i=docker",
+            "link": "https://www.docker.com/"
         },
         {
             "nome": "Postman",
@@ -104,11 +79,6 @@
             "nome": "Git",
             "icone": "https://skillicons.dev/icons?i=git",
             "link": "https://git-scm.com"
-        },
-        {
-            "nome": "Figma",
-            "icone": "https://skillicons.dev/icons?i=figma",
-            "link": "https://www.figma.com"
         }
     ]
 }

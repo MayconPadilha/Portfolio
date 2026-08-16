@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style_menu.css">
+    <link rel="stylesheet" href="./styles/about.css">
     <title>Maycon Padilha | Desenvolvedor Full Stack</title>
     <link rel="shortcut icon" href="https://github.com/MayconPadilha.png" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>
@@ -22,35 +24,56 @@
                 <span class="logo-text">MP</span>
             </div>
             <div class="menu">
-                <a href="#home">Home</a>
+                <a href="#home">Início</a>
                 <a href="#projetos">Projetos</a>
-                <a href="#tecnologias">Skills</a>
+                <a href="#tecnologias">Tecnologias</a>
                 <a href="#experiencias">Experiências</a>
                 <a href="#sobre">Sobre</a>
                 <a href="#contato">Contato</a>
             </div>
             <div class="nav-right">
                 <div class="social-icons">
-                    <a href="https://github.com/MayconPadilha" target="_blank" aria-label="Github">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/maycon-padilha/" target="_blank" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://wa.me/5551994802544" target="_blank" aria-label="Whatsapp">
+                    <a href="https://wa.me/5551994802544" target="_blank" rel="noopener" aria-label="Whatsapp">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
+
+                    <a href="https://www.linkedin.com/in/maycon-padilha/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/MayconPadilha" target="_blank" rel="noopener" aria-label="Github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
                     <a href="https://drive.google.com/file/d/1a8lMbzvOPkjRHo3LR7oMwOQjdpjS7ecO/view?usp=sharing"
-                        target="_blank" aria-label="Currículo">
+                        target="_blank" rel="noopener" aria-label="Currículo">
                         <i class="fa-solid fa-file-pdf"></i>
                     </a>
                 </div>
+
                 <button class="theme-toggle" aria-label="Alternar tema">
                     <i class="fa-solid fa-moon"></i>
                 </button>
+
+                <!-- Hamburger -->
+                <button class="theme-toggle menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
             </div>
         </nav>
     </header>
+
+    <div class="menu-mobile" id="menu">
+        <a href="#home">Início</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#experiencias">Experiências</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </div>
 
     <main>
         <!-- Hero -->
@@ -59,7 +82,6 @@
                 <h1 class="hero-title" data-text="Maycon Padilha">Maycon Padilha</h1>
                 <p class="hero-subtitle">Desenvolvedor Full Stack Júnior</p>
                 <p class="hero-description">Transformando ideias em soluções digitais</p>
-                <a href="#contato" class="cta-button">Entre em Contato</a>
             </div>
             <div class="hero-image">
                 <div class="profile-pic"></div>
@@ -97,9 +119,25 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
+                        <h3>Desenvolvedor Front-End Junior 1</h3>
+                        <p class="timeline-company">Simfrete Tecnologia LTDA | Porto Alegre, RS</p>
+                        <p class="timeline-date">Novembro 2024 - Atual</p>
+                        <ul>
+                            <li>Desenvolvimento de aplicações web utilizando Angular, TypeScript, HTML e CSS</li>
+                            <li>Criação de interfaces responsivas e componentes reutilizáveis</li>
+                            <li>Integração e consumo de APIs REST</li>
+                            <li>Utilização de FaaS (Function as a Service) e arquitetura baseada em funções</li>
+                            <li>Desenvolvimento e manutenção de consultas SQL em PostgreSQL</li>
+                            <li>Utilização de Git, Docker e Jenkins no fluxo de desenvolvimento</li>
+                            <li>Participação na evolução de aplicações e migração para arquitetura de Micro Frontends</li>
+                        </ul>                   
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
                         <h3>Desenvolvedor Full Stack</h3>
                         <p class="timeline-company">Freelance | Porto Alegre, RS</p>
-                        <p class="timeline-date">Setembro 2022 - Atual</p>
+                        <p class="timeline-date">Setembro 2022 - Novembro 2024</p>
                         <ul>
                             <li>Desenvolvimento de aplicações web com Angular (front-end) e Spring Boot/Java (back-end),
                                 integrando MySQL.</li>
@@ -113,7 +151,7 @@
                     <div class="timeline-content">
                         <h3>Suporte Técnico (Estagiário)</h3>
                         <p class="timeline-company">Defensoria Pública da União (DPU) | Porto Alegre, RS</p>
-                        <p class="timeline-date">Maio 2024 - Atual</p>
+                        <p class="timeline-date">Maio 2024 - Novembro 2024</p>
                         <ul>
                             <li>Configuração de notebooks para suporte à equipe de atendimento e defensores.</li>
                         </ul>
@@ -145,16 +183,65 @@
         </section>
 
         <!-- Sobre -->
-        <section id="sobre" class="section">
+        <section id="sobre" class="section about-section">
             <h2 class="section-title">Sobre Mim</h2>
+
             <div class="about-content">
                 <div class="about-text">
-                    <p>Sou Maycon Jordan da Silva Padilha, um desenvolvedor Full Stack Júnior apaixonado por tecnologia
-                        e inovação. Minha jornada começou com a curiosidade sobre criação de games, evoluindo para uma
-                        paixão por desenvolver soluções criativas e funcionais.</p>
-                    <p>Possuo alta capacidade de resolver problemas de forma ágil, com atenção aos detalhes e foco nas
-                        necessidades do cliente. Estou sempre buscando aprender e aprimorar minhas habilidades para
-                        entregar valor em cada projeto.</p>
+                    <h3>
+                        Desenvolvedor Full Stack com foco em Front-end
+                    </h3>
+        
+                    <p>
+                        Minha jornada na tecnologia começou com a curiosidade em entender
+                        como os games eram criados e, ao longo do tempo, essa curiosidade
+                        se transformou em uma paixão pelo desenvolvimento de software.
+                    </p>
+                    <p>
+                        Atuo no desenvolvimento de aplicações web tanto no Front-end
+                        quanto no Back-end, mas tenho maior afinidade com o Front-end,
+                        especialmente na criação de interfaces modernas, responsivas e
+                        intuitivas.
+                    </p>
+                    <p>
+                        Gosto de entender o problema antes de pensar na solução e estou
+                        sempre buscando aprimorar minhas habilidades, conhecer novas
+                        tecnologias e evoluir como desenvolvedor.
+                    </p>        
+                </div>
+        
+                <div class="about-info">
+                    <div class="info-card">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div>
+                            <span>Formação</span>
+                            <strong>Análise e Desenvolvimento de Sistemas</strong>
+                        </div>
+                    </div>
+        
+                    <div class="info-card">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <div>
+                            <span>Atuação</span>
+                            <strong>Full Stack com foco em Front-end</strong>
+                        </div>
+                    </div>
+        
+                    <div class="info-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span>Localização</span>
+                            <strong>Porto Alegre, RS</strong>
+                        </div>
+                    </div>
+        
+                    <div class="info-card">
+                        <i class="fa-solid fa-rocket"></i>
+                        <div>
+                            <span>Objetivo</span>
+                            <strong>Evoluir e criar soluções de impacto</strong>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -177,10 +264,11 @@
     </main>
 
     <footer>
-        <p>© 2025 Maycon Padilha. Todos os direitos reservados.</p>
+        <p>© 2026 Maycon Padilha. Todos os direitos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/projetos.js"></script>
     <script src="./js/tecnologias.js"></script>
     <script src="./js/particles.js"></script>
